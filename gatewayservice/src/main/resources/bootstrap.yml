@@ -8,10 +8,6 @@ eureka:
 
 zuul:
   routes:
-    auth:
-        path: /auth/**
-        service-id: auth-service
-        strip-prefix: false
     batch:
         path: /batch/**
         service-id: batch-service
@@ -31,10 +27,6 @@ zuul:
     mail:
         path: /mail/**
         service-id: mail-service
-        strip-prefix: false
-    search:
-        path: /search/**
-        service-id: search-service
         strip-prefix: false
 spring:
   application:
