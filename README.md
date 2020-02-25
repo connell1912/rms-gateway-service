@@ -1,3 +1,1 @@
 # rms-gateway-service
-
-##
