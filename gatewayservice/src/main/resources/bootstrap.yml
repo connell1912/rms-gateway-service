@@ -21,7 +21,7 @@ zuul:
         service-id: employee-service
         strip-prefix: false
     work-order:
-        path: /work-order/**
+        path: /workorder/**
         service-id: work-order-service
         strip-prefix: false
     mail:
