@@ -1,0 +1,33 @@
+server:
+    port: 8765
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    eureka-server-port: 8761
+
+zuul:
+  routes:
+    batch:
+        path: /batch/**
+        service-id: batch-service
+        strip-prefix: false
+    campus:
+        path: /campus/**
+        service-id: campus-service
+        strip-prefix: false
+    employee:
+        path: /employee/**
+        service-id: employee-service
+        strip-prefix: false
+    work-order:
+        path: /workorder/**
+        service-id: work-order-service
+        strip-prefix: false
+    mail:
+        path: /mail/**
+        service-id: mail-service
+        strip-prefix: false
+spring:
+  application:
+    name: api-gateway
